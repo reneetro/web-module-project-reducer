@@ -10,8 +10,9 @@ import {
   applyNumber, 
   changeOperation, 
   clearDisplay, 
-  useMemory,
-  applyMemory
+  setMemory,
+  applyMemory,
+  clearMemory
 } from '../actions'
 
 function App() {
@@ -35,9 +36,9 @@ const [state, dispatch] = useReducer(reducer, initialState);
             </div>
             
             <div className="row">
-              <CalcButton value={"M+"} onClick = {() => dispatch(useMemory())}/>
+              <CalcButton value={"M+"} onClick = {() => dispatch(setMemory())}/>
               <CalcButton value={"MR"} onClick = {() => dispatch(applyMemory())}/>
-              <CalcButton value={"MC"}/>
+              <CalcButton value={"MC"} onClick= {() => dispatch(clearMemory())}/>
             </div>
 
             <div className="row">
