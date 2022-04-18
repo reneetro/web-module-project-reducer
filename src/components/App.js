@@ -52,9 +52,9 @@ const [state, dispatch] = useReducer(reducer, initialState);
             </div>
 
             <div className="row">
-              <CalcButton value={"+"}/>
-              <CalcButton value={"*"}/>
-              <CalcButton value={"-"}/>
+              <CalcButton value={"+"} onClick={() => dispatch(changeOperation('+')) }/>
+              <CalcButton value={"*"} onClick={() => dispatch(changeOperation('*')) }/>
+              <CalcButton value={"-"} onClick={() => dispatch(changeOperation('-')) }/>
             </div>
 
             <div className="row ce_button">
