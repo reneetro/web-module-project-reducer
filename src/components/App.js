@@ -5,7 +5,7 @@ import TotalDisplay from './TotalDisplay';
 import CalcButton from './CalcButton';
 
 import reducer, { initialState } from '../reducers';
-import { addOne, applyNumber } from '../actions'
+import { addOne, applyNumber, changeOperation } from '../actions'
 
 function App() {
 
