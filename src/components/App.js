@@ -34,7 +34,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
             </div>
 
             <div className="row">
-              <CalcButton value={1} onClick={()=> dispatch(addOne())}/>
+              <CalcButton value={1} onClick={() => dispatch(addOne())}/>
               <CalcButton value={2}/>
               <CalcButton value={3}/>
             </div>
