@@ -1,4 +1,6 @@
 import React from 'react';
+import { addOne } from '../actions'
+
 
 const CalcButton = (props) => {
     const { value, onClick = (e)=>{}, size = 4} = props;
